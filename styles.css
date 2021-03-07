@@ -1,0 +1,394 @@
+/* Global styles */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-view {
+    color: white;
+    background-color: #67597a;
+    border: none;
+}
+
+.btn-view:active, .btn-primary:focus, .btn-view:hover {
+    background-color: #50455f;
+    color: white;
+    border: none;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+/* Navbar */
+
+.navbar {
+    background: #1a1423;
+    width: 100%;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar a {
+    position: relative;
+    color: white;
+}
+
+li>a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+li>a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+/* Header */
+
+.img-me {
+    max-width: 150px;
+}
+
+.header {
+    padding-top: 4em;
+    background: #1a1423;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.header:after {
+    background: inherit;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(1.5deg);
+    transform-origin: 0%;
+    z-index: -1;
+}
+
+/* Recent Work */
+
+.recent-work {
+    background-color: white;
+    margin-top: 3em;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 2em;
+}
+
+.recent-work::after {
+    background: inherit;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 75%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(1.5deg);
+    transform-origin: 0%;
+    z-index: -1;
+}
+
+.work-example {
+    margin: .5em 1em;
+    background-color: #555b6e;
+    color: white;
+}
+
+.work-example-blurb {
+    padding: 0 3em;
+}
+
+.work-example-img {
+    padding: 2em;
+    background-color: #555b6e;
+}
+
+/* Skills section */
+
+.skills {
+    background-color: #cccccc;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    position: relative;
+    z-index: 1;
+}
+
+.skills::after {
+    background: inherit;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 75%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(1.5deg);
+    transform-origin: 0%;
+    z-index: -1;
+}
+
+.circle {
+    background-color: #67597a;
+    display: block;
+    position: relative;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.skill-icon {
+    max-width: 65%;
+}
+
+.skill-title{
+    font-weight: bold;
+}
+
+.skill-content {
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.skill-content-icon{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.skill-row {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* Work together section */
+
+.work-together {
+    color: white;
+    background-color: #1a1423;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    position: relative;
+    z-index: 0;
+}
+
+.work-together-title{
+    text-align: center;
+}
+
+.work-together-content {
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.work-together-btn {
+    justify-content: center;
+    padding-bottom: 2em;
+}
+
+.social-links-container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.social-links {
+    max-width: 60px;
+}
+
+.social-links:hover {
+    opacity: 50%;
+}
+
+.social-link-a {
+    width: 100%;
+    text-align: center;
+}
+
+/* Projects Page */
+
+.projects-header {
+    padding-top: 6em;
+    padding-bottom: 2em;
+}
+
+.btn-left {
+    margin-right: 2em;
+}
+
+.recent-work-1, .recent-work-2, .recent-work-3 {
+    padding-top: 3rem;
+}
+
+.recent-work-2 {
+    background-color: #cccccc;
+    padding-top: 7rem;
+    margin-top: -1rem;
+    z-index: 0;
+}
+
+/* About Page */
+
+.about-div {
+    background-color: white;
+    margin-top: 3em;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 2em;
+}
+
+.about-div::after {
+    background: inherit;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 75%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(1.5deg);
+    transform-origin: 0%;
+    z-index: -1;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 575px) {
+    h1 {
+        font-size: 2em;
+        font-weight: bolder;
+    }
+    h2 {
+        font-weight: bold;
+    }
+    p {
+        font-size: 1em;
+    }
+    .work-together-content {
+        text-align: center;
+    }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+    h1 {
+        font-size: 2em;
+        font-weight: bolder;
+    }
+    h2 {
+        font-weight: bold;
+    }
+    p {
+        font-size: 1em;
+    }
+    .img-me {
+        max-width: 200px;
+    }
+    .work-together-content {
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+    }
+    .social-links {
+        max-width: 60px;
+    }
+    .circle {
+        height: 120px;
+        width: 120px;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+        font-weight: bolder;
+    }
+    h2 {
+        font-weight: bold;
+    }
+    p {
+        font-size: 1em;
+    }
+    .social-links {
+        max-width: 80px;
+    }
+    .circle {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    h1 {
+        font-size: 4em;
+        font-weight: bolder;
+    }
+    h2 {
+        font-weight: bold;
+    }
+    p {
+        font-size: 1.5em;
+    }
+    .img-me {
+        max-width: 250px;
+    }
+    .work-together-content, .work-together-title {
+        text-align: left;
+    }
+    .work-together-content{
+        padding-bottom: 0;
+    }
+    .work-together-btn {
+        justify-content: flex-end;
+        padding-bottom: 0;
+    }
+    .skill-content {
+        align-content: center;
+        text-align: center;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 5em;
+        font-weight: bolder;
+    }
+    h2 {
+        font-size: 3em;
+        font-weight: bold;
+    }
+    p {
+        font-size: 1.5em;
+    }
+    .social-links {
+        max-width: 80px;
+    }
+}

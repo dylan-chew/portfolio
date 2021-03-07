@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist\css\bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./bootstrap-4.4.1-dist\jQuery\jquery-3.4.1.min.js"></script>
+    <script src="./bootstrap-4.4.1-dist\js\bootstrap.min.js"></script>
+    <title>Home</title>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <nav
+          class="navbar fixed-top navbar-dark navbar-expand-lg purple-background"
+        >
+          <a class="navbar-brand" href="/index.html">Dylan Chew</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about.html">About Me</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <!-- HEADER -->
+      <div class="row purple-background header">
+        <div class="col-3"></div>
+        <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+          <img
+            src="./imgs/me.jpg"
+            class="rounded-circle img-me img-fluid"
+            alt="Picture of me"
+          />
+          <h1>Hello, I'm Dylan</h1>
+          <p>
+            I’m a full-stack web developer based in Halifax, Nova Scotia. I’m
+            passionate about building web apps and bringing new ideas to life.
+            Feel free to take a look at some projects I’ve worked on or contact
+            me if you have any questions.
+          </p>
+        </div>
+        <div class="col-3"></div>
+      </div>
+
+      <!-- RECENT WORK -->
+      <div class="row recent-work">
+        <div class="col-12 section-header">
+          <h2>What I've Been Working On</h2>
+        </div>
+        <div class="row work-example">
+          <div class="col-lg-6 col-md-6 col-xs-12 work-example-img">
+            <img
+              class="img-fluid"
+              src="./imgs/synthsocial.png"
+              alt="synthsocial"
+            />
+          </div>
+          <div class="col-lg-6 col-md-6 col-xs-12 my-auto work-example-blurb">
+            <h2>SynthSocial</h2>
+            <p>
+              A social media web application for synth lovers. Complete with
+              realtime feed updates, customizable themes, and assignable
+              administrator roles. This project was built using Laravel, with
+              Bootstrap on the front-end and MySQL on the back end.
+            </p>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="d-flex justify-content-end">
+            <a href="/projects.html" class=" btn btn-view">View All Projects</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- What I Can Do -->
+      <div class="row skills">
+        <div class="col-12 section-header">
+          <h2>What I Can Do</h2>
+        </div>
+        <div class="col-lg-3 col-12 skill-row">
+          <div class="row">
+            <div class="col-3 col-lg-12 skill-content skill-content-icon">
+              <div class="row justify-content-around ">
+                <div class="circle d-flex justify-content-center">
+                  <img
+                    class="img-fluid skill-icon"
+                    src="./imgs\010-code.svg"
+                    alt="code"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-9 col-lg-12  skill-content">
+              <p class='skill-title'>Front-End Development</p>
+              <p>
+                Skilled in developing web applications with HTML, CSS, and
+                JavaScript. Experience with many frameworks and libraries such
+                as jQuery, React, Electron, and Bootstrap.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-12 skill-row">
+          <div class="row">
+            <div class="col-3 col-lg-12 skill-content skill-content-icon">
+              <div class="row justify-content-around ">
+                <div class="circle d-flex justify-content-center">
+                  <img
+                    class="img-fluid skill-icon"
+                    src="./imgs\044-gear.svg"
+                    alt="code"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-9 col-lg-12  skill-content">
+              <p class='skill-title'>Back-End Development</p>
+              <p>
+                Experienced in PHP and the Laravel framework. Have created JS
+                back-end services using NodeJS/Express. RESTful API development
+                and integration.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-12 skill-row">
+          <div class="row">
+            <div class="col-3 col-lg-12 skill-content skill-content-icon">
+              <div class="row justify-content-around ">
+                <div class="circle d-flex justify-content-center">
+                  <img
+                    class="img-fluid skill-icon"
+                    src="./imgs\database-3.svg"
+                    alt="code"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-9 col-lg-12  skill-content">
+              <p class='skill-title'>Database Design and Integration</p>
+              <p>
+                Experience with MongoDB, MySQL, SQLite, and PostgreSQL. Ability
+                to work with data and connect databases with various web
+                applications.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-12 skill-row">
+          <div class="row">
+            <div class="col-3 col-lg-12 skill-content skill-content-icon">
+              <div class="row justify-content-around ">
+                <div class="circle d-flex justify-content-center">
+                  <img
+                    class="img-fluid skill-icon"
+                    src="./imgs\006-upload.svg"
+                    alt="code"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-9 col-lg-12  skill-content">
+              <p class='skill-title'>Cloud Integration and Deployment</p>
+              <p>
+                Deploying applications to Heroku and AWS. Using Gitlab to
+                implement CI/CD
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Want to work together? -->
+      <div class="row work-together">
+        <div class="col-12 section-header">
+          <h2 class="work-together-title">Want To Work Together?</h2>
+        </div>
+        <div class="col-lg-4">
+          <h3 class="work-together-content">
+            If you have an idea you want to bring to life and feel I would be a
+            good fit, I would love to hear it! Feel free to reach out to me by
+            email, or socials.
+          </h3>
+        </div>
+        <div class="col-lg-8 ">
+          <div class="row justice social-links-container">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-2 col-3 d-flex justify-content-center">
+              <a
+                class="social-link-a"
+                target="_blank"
+                href="mailto:w0254970@nscc.ca"
+              >
+                <img class="img-fluid social-links" src="./imgs/email.svg" />
+              </a>
+            </div>
+            <div class="col-lg-2 col-3 d-flex justify-content-center">
+              <a
+                class="social-link-a"
+                target="_blank"
+                href="https://www.linkedin.com/in/dylan-chew-7b165765/"
+              >
+                <img
+                  class="img-fluid social-links"
+                  src="./imgs\045-linkedin.svg"
+                />
+              </a>
+            </div>
+            <div class="col-lg-2 col-3 d-flex justify-content-center">
+              <a
+                class="social-link-a"
+                target="_blank"
+                href="https://github.com/dylan-chew"
+              >
+                <img
+                  class="img-fluid social-links"
+                  src="./imgs\038-github.svg"
+                />
+              </a>
+            </div>
+            <div class="col-lg-2 col-3 d-flex justify-content-center">
+              <a
+                class="social-link-a"
+                target="_blank"
+                href="https://www.last.fm/user/milque_toast"
+              >
+                <img
+                  class="img-fluid social-links"
+                  src="./imgs\028-lastfm.svg"
+                />
+              </a>
+            </div>
+            <div class="col-lg-1"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
